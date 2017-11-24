@@ -1,0 +1,11 @@
+/* @import 'styles/weui.wxss'; */
+
+/* 将样式模块化 */
+@import 'styles/reset.wxss';
+@import 'styles/hero.wxss';
+@import 'styles/button.wxss';
+@import 'styles/card.wxss';
+@import 'styles/cover.wxss';
+@import 'styles/spec.wxss';
+@import 'styles/action.wxss';
+@import 'styles/story.wxss';

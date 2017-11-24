@@ -1,0 +1,14 @@
+page{
+    line-height: 1.5;
+    font-size: 32rpx;
+
+}
+
+video{
+    width: 100%;
+
+}
+image{
+    display: block;
+    width: 100%; 
+}

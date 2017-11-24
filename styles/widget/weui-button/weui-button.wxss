@@ -1,0 +1,6 @@
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.btn{margin-top:15px}.btn:first-child{margin-top:0}.btn-area{margin:1.17647059em 15px .3em}

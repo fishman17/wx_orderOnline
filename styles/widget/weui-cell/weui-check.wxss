@@ -1,0 +1,6 @@
+/*!
+ * WeUI v1.1.1 (https://github.com/weui/weui-wxss)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.icon-radio{margin-left:3.2px;margin-right:3.2px}.icon-checkbox_circle,.icon-checkbox_success{margin-left:4.6px;margin-right:4.6px}.check__label:active{background-color:#ececec}.check{position:absolute;left:-9999px}.check__hd_in-checkbox{padding-right:.35em}.cell__ft_in-radio{padding-left:.35em}
