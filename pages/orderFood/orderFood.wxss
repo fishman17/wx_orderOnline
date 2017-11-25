@@ -1,0 +1,98 @@
+/* pages/orderFood/orderFood.wxss */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navigation{
+    width: 20%;
+    border-right: 2rpx solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.navigation .navFood{
+    width: 150rpx;
+    height: 100rpx;
+    font-size: 40rpx;
+    text-align: center;
+    line-height: 100rpx;
+}
+.navigation .navFood.active{
+    margin-right: -2rpx;
+    padding-left: -2rpx;
+    color: rgb(119, 67, 67);
+    background-color: #8f7b7b ;
+}
+.content{
+    width: 80%;
+    background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.content .food{
+    width: 100%;
+    height: 250rpx;
+    background-color: silver;
+    border: 2rpx solid firebrick;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20rpx;
+}
+.content .food image{
+    width: 40%;
+    height: 250rpx;
+    background-color: seagreen;
+}
+.content .food .mes{
+    width: 50%;
+    height: 250rpx;
+    background-color: rgb(157, 189, 190);
+    position: relative;
+}
+.content .food .mes .foodName{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 35rpx;  
+}
+.content .food .mes .foodIntroduce{
+    position: absolute;
+    top: 50rpx;
+    left: 0;
+    font-size: 28rpx;  
+}
+.content .food .mes p{
+    position: absolute;
+    top: 200rpx;
+    left: 0;
+    font-size: 40rpx;  
+}
+.content .food .mes .btn{
+    position: absolute;
+    right: 0;
+    bottom: 50rpx;
+    width: 200rpx;
+	text-align: right;
+}
+
+
+.cart{
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0; 
+	bottom: 0;
+	padding: 50rpx;
+    background: #ddd;
+}
+.cart .total{
+    margin-right: 25rpx;
+}

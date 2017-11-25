@@ -1,1 +1,81 @@
 /* pages/index/index.wxss */
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; 
+}
+.myswiper{
+    width: 100%;
+    height: 30vh;
+    background-color: rebeccapurple;
+    background-size: cover;
+}
+.components{
+    width: 100%;
+    height: 25vh;
+    background-color: fuchsia;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+}
+.components .functions{
+    width: 150rpx;
+    
+}
+
+.components .functions image{
+    width:128rpx;
+    height: 128rpx;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+}
+.components .functions text{
+    text-align: center;
+    display: inline-block;
+}
+
+.GoodsLabel{
+    width: 30%;
+    height: 5vh;
+    margin: 0 auto;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+.newGoods{
+    width: 100%;
+    display: flex;
+    background-color: sandybrown; 
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newGoods .goods{
+    width: 350rpx;
+    height: 300rpx;
+    background-color: saddlebrown;
+    display: block;
+    border: 10rpx solid seagreen; 
+    text-align: center;
+    position: relative;
+}
+.newGoods .goods image{
+    width: 300rpx;
+    height: 200rpx;
+    border: 5rpx solid white;
+    margin:  0 auto;
+}
+.newGoods .goods .goods-price{
+    position: absolute;
+    right: 50rpx;
+    bottom: 100rpx;
+
+}
+.slide-image{
+    width: 100%;
+}

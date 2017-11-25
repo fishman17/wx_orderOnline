@@ -1,2 +1,50 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="container">
+    <view class="myswiper">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" height="200rpx" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="components">
+        <block wx:for="{{components}}" >
+            <view class="functions" bindtap="changeTo" data-where="{{item.where}}">
+                <view class="functionImage">
+                    <image src="{{item.image}}" />
+                </view>
+                <text>{{item.function}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="GoodsLabel">
+        新品上架
+    </view>
+    <view class="newGoods">
+        <block wx:for="{{newGoods}}">
+            <view class="goods">
+                <view class="goodsImage">
+                    <image src="{{item.image}}" />
+                </view>
+                <text class="goods-price">￥{{item.price}}</text>
+                <text class="goods-introduce">{{item.introduce}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="GoodsLabel">
+        经典系列
+    </view>
+    <view class="newGoods">
+        <block wx:for="{{classicGoods}}">
+            <view class="goods">
+                <view class="goodsImage">
+                    <image src="{{item.image}}" />
+                </view>
+                <text class="goods-price">￥{{item.price}}</text>
+                <text class="goods-introduce">{{item.introduce}}</text>
+            </view>
+        </block>
+    </view>
+</view>
