@@ -1,0 +1,24 @@
+/* pages/classify/classify.wxss */
+.classify-hd__img{
+    width: 100%;
+    height: 20vh;
+}
+.classify-bd{
+    width: 100%;
+    height: 40vh;
+    margin-top: 50rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.classify-bd__class{
+    width: 200rpx;
+    height: 250rpx;
+    text-align: center;
+}
+.classify-bd__class__img{
+    width: 200rpx;
+    height: 180rpx;
+}

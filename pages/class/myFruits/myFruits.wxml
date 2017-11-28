@@ -1,18 +1,29 @@
 <!--pages/orderFood/orderFood.wxml-->
 <view class="container">
+    <!-- <scroll-view scroll-y="true"> -->
     <view class="navigation">
+            <!-- <scroll-view scroll-y="true" style=
+            "height:1000rpx"> -->
         <block wx:for="{{foodList}}">
+            
             <text class="navFood {{currentTab==item.id?'active':''}}"
              bindtap="changeNav" data-currentab="{{item.id}}">{{item.name}}</text>
-        </block>
+            
+            </block>
+    <!-- </scroll-view> -->
     </view>
+    <!-- </scroll-view> -->
+    
     <view class="content">
+            <scroll-view scroll-y="true" style=
+            "{{windowHeight}}">
         <block wx:for="{{classifyList[currentTab]}}">
             <view class="food">
                 <image src="{{item.src}}" />
                 <view class="mes">
                     <text class="foodName">{{item.name}}</text>
                     <text class="foodIntroduce">{{item.introduce}}</text>
+                    <view class="special">特价</view>
                     <p>￥{{item.price}}</p>
                     <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}" >
                             <icon type="{{item.selected ? 'success' : 'circle'}}" color="orange" size="30"></icon>
@@ -21,9 +32,14 @@
                 
             </view>
         </block>
+    </scroll-view>
     </view>
+ 
     <view class="cart">
         <text class="total">购物车：{{cartTotal}}件</text>
         <text class="total">总价：￥{{cartTotalPrice}}</text>
+        <button type="default" size="defaultSize" loading="loading" plain="plain}" disabled="disabled" bindtap="defaultTap" hover-class="defaultTap">点击预定</button>
+        
+    
     </view>
 </view>

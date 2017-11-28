@@ -1,0 +1,42 @@
+<!--pages/myCart/myCart.wxml-->
+
+<!-- 
+<import src="../common/list.wxml" />
+
+<swiper-item>
+                <view class="swiper-item weui-tab__content">
+                    <block wx:for="{{cart}}" wx:key="{{index}}">
+                        <template is="cart-items" data="{{...item}}" />    
+                    </block>
+                </view>
+</swiper-item> -->
+<view class="container">
+    <view class="content">
+        <block wx:for="{{cart}}">
+            <view class="food">
+                <image src="{{item.src}}" />
+                <view class="mes">
+                    <text class="foodName">{{item.name}}</text>
+                    <text class="foodIntroduce">{{item.introduce}}</text>
+                    <view class="special">特价</view>
+                    <p>￥{{item.price}}</p>
+                    <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}">
+                        <icon type="{{item.selected ? 'success' : 'circle'}}" color="orange" size="30"></icon>
+                    </view>
+                </view>
+
+            </view>
+        </block>
+    </view>
+
+    <view class="cart">
+        <view class="cart-allin" bindtap="cartAllIn">
+            <icon type="{{item.selected ? 'success' : 'circle'}}" color="blue" size="30"></icon>
+
+            <text class="total">全选</text>
+        </view>
+
+            <view class="totalall">合计：<text>￥{{cartTotalPrice}}</text></view>
+            <view class="cart-btn">去结算</view>
+    </view>
+</view>

@@ -8,23 +8,94 @@
 }
 .myswiper{
     width: 100%;
-    height: 30vh;
+    /* height: 20vh; */
     background-color: rebeccapurple;
     background-size: cover;
 }
+.slide-image{
+    width: 100%;
+    height: 280rpx; 
+    margin:  0 auto;
+}
+.headlines{
+    width: 100%;
+    height: 100rpx;
+    background-color: saddlebrown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.headlines-img{
+
+    width:60rpx;
+    height: 60rpx;
+}
+.headlines-text{
+    width: 700rpx;
+    height: 80rpx;
+    background-color: seagreen;
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      */
+}
+.headlines-text-items{
+    margin-top: 10rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;      
+}
+
+.headlines-text-hd{
+    /* position: absolute;
+    top: 15rpx; */
+    margin-left: 15rpx;
+    width: 120rpx;
+    height: 40rpx;
+    /* background-color:hotpink; */
+    font-size: 30rpx;
+    color: orange;
+    border:  3rpx solid orange;
+    border-radius: 15%;
+    text-align: center;
+    line-height: 40rpx;
+}
+.headlines-text-bd{
+    /* position: absolute;
+    top: 15rpx;
+    left: 130rpx;  */
+    /* margin-left: 0rpx; */
+    float: left;
+    width:400rpx;
+    height: 40rpx;
+    background-color: silver;
+}
+.headlines-text-ft{
+    /* position: absolute;
+    top: 15rpx;
+    right: 30rpx; */
+    display: inline-block;
+    width:100rpx;
+    height: 60rpx;
+    background-color: slateblue;
+}
 .components{
     width: 100%;
-    height: 25vh;
+    height: 15vh;
     background-color: fuchsia;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-size: cover;
+    margin-top: 30rpx;
 }
 .components .functions{
     width: 150rpx;
-    
+
 }
 
 .components .functions image{
@@ -75,7 +146,4 @@
     right: 50rpx;
     bottom: 100rpx;
 
-}
-.slide-image{
-    width: 100%;
 }

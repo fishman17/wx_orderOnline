@@ -1,11 +1,39 @@
-// pages/orderSeat/orderSeat.js
+// pages/classify/classify.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    classify:[
+      {
+        url: "../../assets/images/landscape.png",
+        class: '失灵水果',
+        where: 'myFruits',
+      },
+      {
+        url: "../../assets/images/landscape.png",
+        class: '肉类蛋品',
+        where: 'myMeat',
+      },
+      {
+        url:"../../assets/images/landscape.png",
+        class: '失灵水果',
+      },
+
+      {
+        url: "../../assets/images/landscape.png",
+        class: '失灵水果',
+      },
+      {
+        url:"../../assets/images/landscape.png",
+        class: '失灵水果',
+      },
+      {
+        url: "../../assets/images/landscape.png",
+        class: '失灵水果',
+      },
+    ]
   },
 
   /**

@@ -4,32 +4,41 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
 }
 .navigation{
-    width: 20%;
-    border-right: 2rpx solid #ddd;
-
+    width: 25%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start; 
     align-items: center;
+    background-color: rgb(236, 231, 231);
+
+
 }
+
 .navigation .navFood{
-    width: 150rpx;
+    width: 100%;
     height: 100rpx;
     font-size: 40rpx;
     text-align: center;
+    color: rgba(0, 0, 0, 0.548);
     line-height: 100rpx;
+    border-right: 1rpx solid rgb(185, 182, 182);
 }
 .navigation .navFood.active{
     margin-right: -2rpx;
-    padding-left: -2rpx;
-    color: rgb(119, 67, 67);
-    background-color: #8f7b7b ;
+    margin-left: -2rpx;
+    color: black;
+    background-color: white;
+    border-right: 0 solid ; 
+    border-top: 1rpx solid rgb(185, 182, 182);
+    border-bottom: 1rpx solid rgb(185, 182, 182);
 }
 .content{
-    width: 80%;
+    width: 75%;
+    height: 100vh;
     background-color: sandybrown;
     display: flex;
     flex-direction: column;
@@ -39,7 +48,7 @@
 }
 .content .food{
     width: 100%;
-    height: 250rpx;
+    height: 200rpx;
     background-color: silver;
     border: 2rpx solid firebrick;
     display: flex;
@@ -47,13 +56,13 @@
     margin-top: 20rpx;
 }
 .content .food image{
-    width: 40%;
-    height: 250rpx;
+    width: 35%;
+    height: 200rpx;
     background-color: seagreen;
 }
 .content .food .mes{
-    width: 50%;
-    height: 250rpx;
+    width: 65%;
+    height: 200rpx;
     background-color: rgb(157, 189, 190);
     position: relative;
 }
@@ -67,18 +76,32 @@
     position: absolute;
     top: 50rpx;
     left: 0;
+    color: rgb(185, 161, 161);
     font-size: 28rpx;  
+}
+.content .food .mes .special{
+    position: absolute;
+    width: 60rpx;
+    height: 30rpx;
+    border: 2rpx solid  rgb(255, 60, 0);
+    top: 120rpx;
+    left: 0;
+    color: rgb(255, 60, 0);
+    font-size: 25rpx;  
+    line-height: 30rpx;
+    text-align: center;
 }
 .content .food .mes p{
     position: absolute;
-    top: 200rpx;
+    top: 150rpx;
     left: 0;
-    font-size: 40rpx;  
+    color: rgb(255, 94, 0);
+    font-size: 30rpx;  
 }
 .content .food .mes .btn{
     position: absolute;
-    right: 0;
-    bottom: 50rpx;
+    right: 20rpx;
+    bottom: 0rpx;
     width: 200rpx;
 	text-align: right;
 }

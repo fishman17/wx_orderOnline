@@ -6,61 +6,77 @@ Page({
    */
   data: {
     imgUrls: [
-      "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-      "http://img.lanrentuku.com/img/allimg/1707/15006300952768.jpg",
-      "http://img.lanrentuku.com/img/allimg/1707/15006300952768.jpg"
+      "../../assets/images/landscape.png",
+      "../../assets/images/landscape.png",
+      "../../assets/images/landscape.png",
     ],
     indicatorDots: true, //是否显示面板指示点
     autoplay: true, //是否自动切换
     interval: 3000, //自动切换时间间隔,3s
     duration: 1000, //	滑动动画时长1s
     //功能模块
+    //大嘴头条图标
+    headlinesImg: "../../assets/images/landscape.png",
+    //大嘴头条内容
+    headLines: [
+      {
+        head: "盒马集市",
+        body: "放慢脚步，来一场旅行",
+        img:"../../assets/images/landscape.png",
+      },
+     
+    ],
     components: [
       {
         where: "orderSeat",
         image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "预定座位",
+        function: "水果专场",
 
       },
       {
         where: "orderFood",
         image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "点击订餐",
+        function: "精选好货",
       },
       {
         where: "",
-        image: "",
-        function: "等待开发",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+        function: "新人礼包",
       },
       {
         where: "",
-        image: "",
-        function: "等待开发",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+        function: "邀请好友",
+      },
+      {
+        where: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+        function: "鲜人一步",
       },
     ],
     //新品菜
     newGoods: [
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第一个新品菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第二个新品菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第三个新品菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第四个新品菜"
       },
@@ -70,25 +86,25 @@ Page({
     classicGoods: [
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第一个经典菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第二个经典菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第三个经典菜"
       },
       {
         id: 0,
-        image: "",
+        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
         price: 10,
         introduce: "这是第四个经典菜"
       },

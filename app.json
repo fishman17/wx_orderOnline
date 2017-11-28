@@ -1,9 +1,13 @@
 {
   "pages": [
-    "pages/orderFood/orderFood",
+    "pages/myCart/myCart",
+    "pages/common/list",
+    "pages/classify/classify",
+    "pages/class/myFruits/myFruits",
     "pages/index/index",
-    "pages/orderSeat/orderSeat",
-    "pages/person/person"
+    "pages/person/person",
+    
+    "pages/class/myMeat/myMeat"
   ],
   "window": {
     "navigationBarTitleText": "在线订餐系统",
@@ -15,22 +19,31 @@
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "assets/icons/home.png",
-      "selectedIconPath": "assets/icons/home-active.png",
-      "text": "首页"
-    }, {
-      "pagePath": "pages/orderFood/orderFood",
-      "iconPath": "assets/icons/home.png",
-      "selectedIconPath": "assets/icons/home-active.png",
-      "text": "订餐"
-    }, {
-      "pagePath": "pages/person/person",
-      "iconPath": "assets/icons/home.png",
-      "selectedIconPath": "assets/icons/home-active.png",
-      "text": "我的"
-    }
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/myCart/myCart",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home-active.png",
+        "text": "我的"
+      }
     ]
   },
   "debug": false

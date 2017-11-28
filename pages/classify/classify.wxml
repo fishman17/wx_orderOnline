@@ -1,0 +1,15 @@
+<!--pages/classify/classify.wxml-->
+<view class="container">
+    <image src="../../assets/images/landscape.png" class="classify-hd__img"/>
+    <view class="classify-bd">
+        <block wx:for="{{classify}}">
+        
+              <navigator class="classify-bd__class"  url= "../class/{{item.where}}/{{item.where}}?where={{item.where}}">
+            <image class="classify-bd__class__img" src="{{item.url}}"/>
+            <view class="classify-bd__class__items">
+            {{item.class}}
+            </view>
+        </navigator>
+        </block>
+    </view>
+</view>

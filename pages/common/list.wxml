@@ -1,0 +1,17 @@
+<template name="cart-items">
+ <view class="content">
+            <view class="food">
+                <image src="{{src}}" />
+                <view class="mes">
+                    <text class="foodName">{{name}}</text>
+                    <text class="foodIntroduce">{{introduce}}</text>
+                    <view class="special">特价</view>
+                    <p>￥{{price}}</p>
+                    <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}" >
+                            <icon type="{{item.selected ? 'success' : 'circle'}}" color="orange" size="30"></icon>
+                    </view>
+                </view>
+                
+            </view>
+</view>
+</template>

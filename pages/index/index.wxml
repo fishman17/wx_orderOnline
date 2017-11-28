@@ -4,13 +4,14 @@
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}">
                 <swiper-item>
-                    <image src="{{item}}" class="slide-image" height="200rpx" />
+                    <image src="{{item}}" class="slide-image" height="100rpx" />
                 </swiper-item>
             </block>
         </swiper>
     </view>
+
     <view class="components">
-        <block wx:for="{{components}}" >
+        <block wx:for="{{components}}">
             <view class="functions" bindtap="changeTo" data-where="{{item.where}}">
                 <view class="functionImage">
                     <image src="{{item.image}}" />
@@ -19,6 +20,47 @@
             </view>
         </block>
     </view>
+    <view class="headlines">
+        <image src="{{headlinesImg}}" class="headlines-img" />
+        <view class="headlines-text">
+            <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                <block wx:for="{{headLines}}">
+                    <swiper-item>
+                        <view class="headlines-text-items">
+
+                            <view class="headlines-text-hd">
+                                <text>{{item.head}}</text>
+                            </view>
+                            <view class="headlines-text-bd">
+                                <text class="">{{item.body}}</text>
+                            </view>
+                            <image class="headlines-text-ft" src="{{item.img}}"></image>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <!-- <view class="tomorrow">
+        <text>
+            “明天你想要的我都给你准备好了
+        </text>
+        <image src="{{}}" class="tomorrow-hd" />
+        <view class="tomorrow-bd">
+            <view class="tomorrow-bd__items">
+                <image src="{{}}" class="tomorrow-bd__img"/>
+                <text></text>
+            </view>
+            <view class="tomorrow-bd__items">
+
+            </view>
+            <view class="tomorrow-bd__items">
+
+            </view>
+        </view>
+
+    </view> -->
+    
     <view class="GoodsLabel">
         新品上架
     </view>
