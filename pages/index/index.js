@@ -7,9 +7,9 @@ Page({
    */
   data: {
     imgUrls: [
-      "../../assets/images/landscape.png",
-      "../../assets/images/landscape.png",
-      "../../assets/images/landscape.png",
+      "http://img0.imgtn.bdimg.com/it/u=880477421,2302497799&fm=27&gp=0.jpg",
+      "http://img5.imgtn.bdimg.com/it/u=1741138662,3408053349&fm=27&gp=0.jpg",
+      "http://img4.imgtn.bdimg.com/it/u=2930540385,1562266871&fm=27&gp=0.jpg",
     ],
     indicatorDots: true, //是否显示面板指示点
     autoplay: true, //是否自动切换
@@ -18,7 +18,7 @@ Page({
     duration: 1000, //	滑动动画时长1s
     //功能模块
     //大嘴头条图标
-    headlinesImg: "../../assets/images/landscape.png",
+    headlinesImg: "../../assets/icons/toutiao.png",
     //大嘴头条内容
     headLines: [],
     components: [],
@@ -40,7 +40,7 @@ Page({
     } else {
       wx.navigateTo({
         // queryString 查询字符串 ?
-        url: `/pages/${where}/${where}`,
+        url: `/pages/class/${where}/${where}`,
       });
     }
   },

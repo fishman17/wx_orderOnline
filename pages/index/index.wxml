@@ -23,7 +23,7 @@
   
 
         <scroll-view scroll-y-="true"  >
-                <view class="headlines">
+            <view class="headlines">
             <image src="{{headlinesImg}}" class="headlines-img" />
             <view class="headlines-text">
                 <swiper autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" vertical="true">
@@ -47,7 +47,7 @@
         </scroll-view>
     
     <view class="todayTrump">
-        <image></image>
+        <image src="../../assets/icons/wangpai.png"/>
         <text>今日王牌大赏</text>
     </view>
     <!-- // <view class="content"> -->
@@ -57,7 +57,7 @@
             <block wx:for="{{classifyList}}" wx:key="index">
                 <view class="someTrumps">
                     <view class="trumps">
-                        <image src="{{item.src}}" />
+                        <image src="{{item.url}}" />
                         <view class="mes">
                             <text class="foodName">{{item.name}}</text>
                             <text class="foodIntroduce">{{item.introduce}}</text>

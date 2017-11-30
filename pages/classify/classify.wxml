@@ -1,6 +1,6 @@
 <!--pages/classify/classify.wxml-->
 <view class="container">
-    <image src="../../assets/images/landscape.png" class="classify-hd__img"/>
+    <image src="http://img1.imgtn.bdimg.com/it/u=3571672472,1564903431&fm=27&gp=0.jpg" class="classify-hd__img"/>
     <view class="classify-bd">
         <block wx:for="{{classify}}" wx:key = "index">
         

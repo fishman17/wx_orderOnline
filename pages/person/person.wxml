@@ -7,23 +7,23 @@
     </view>
     <view class="foodState">
         <view class="states">
-            <image src="" />
+            <image src="../../assets/icons/waitpay.png" />
             <text>待付款</text>
         </view>
         <view class="states">
-            <image src="" />
+              <image src="../../assets/icons/waitpublish.png" />
             <text>待配送</text>
         </view>
         <view class="states">
-            <image src="" />
+              <image src="../../assets/icons/gotoyourhome.png" />
             <text>配送中</text>
         </view>
         <view class="states">
-            <image src="" />
+              <image src="../../assets/icons/waitcompent.png" />
             <text>待评价</text>
         </view>
         <view class="states">
-            <image src="" />
+             <image src="../../assets/icons/allorder.png" />
             <text>全部订单</text>
         </view>
     </view>
@@ -32,7 +32,7 @@
             <block wx:for="{{userInfoList.first}}" wx:key = "index">
                 <view class="weui-cell">
                     <view class="weui-cell__hd">
-                        <image src="{{}}" />img
+                        <image src="{{item.icon}}" />
 
                     </view>
                     <view class="weui-cell__bd">
@@ -52,7 +52,7 @@
             <block wx:for="{{userInfoList.second}}" wx:key = "index">
                 <view class="weui-cell">
                     <view class="weui-cell__hd">
-                        <image src="{{}}" />img
+                        <image src="{{item.icon}}" />
 
                     </view>
                     <view class="weui-cell__bd">
@@ -71,7 +71,7 @@
             <block wx:for="{{userInfoList.third}}" wx:key = "index">
                 <view class="weui-cell">
                     <view class="weui-cell__hd">
-                        <image src="{{}}" />img
+                        <image src="{{item.icon}}" />
 
                     </view>
                     <view class="weui-cell__bd">

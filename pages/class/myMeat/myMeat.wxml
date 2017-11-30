@@ -10,6 +10,9 @@
              bindtap="changeNav" data-currentab="{{item.id}}">{{item.name}}</text>
             
             </block>
+               <view class="bottom">
+                
+            </view>
     <!-- </scroll-view> -->
     </view>
     <!-- </scroll-view> -->
@@ -19,7 +22,7 @@
             "{{windowHeight}}">
         <block wx:for="{{classifyList[currentTab]}}" wx:key = "index">
             <view class="food">
-                <image src="{{item.src}}" />
+                <image src="{{item.url}}" />
                 <view class="mes">
                     <text class="foodName">{{item.name}}</text>
                     <text class="foodIntroduce">{{item.introduce}}</text>

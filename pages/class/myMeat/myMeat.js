@@ -15,23 +15,23 @@ Page({
 		foodList: [
 			{
 				id: 0,
-				name: '赣菜'
+				name: '火锅肉片'
 			},
 			{
 				id: 1,
-				name: '湘菜'
+				name: '羊肉'
 			},
 			{
 				id: 2,
-				name: '川菜'
+				name: '牛肉'
 			},
 			{
 				id: 3,
-				name: '酒水'
+				name: '牛排'
 			},
 			{
 				id: 4,
-				name: '汤饮'
+				name: '猪肉'
 			}
 		],
 

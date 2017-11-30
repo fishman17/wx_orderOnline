@@ -11,22 +11,22 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     userInfoList: {
      first: [{
-        icon: '../../image/iconfont-dingdan.png',
+        icon: '../../assets/icons/coupon.png',
         text: '优惠券',
         alreadRead: true,
         unreadNum: 2,
         mes: "",
       }, 
       {
-        icon: '../../image/iconfont-card.png',
+        icon: '../../assets/icons/welfare.png',
         text: '福利社',
         alreadRead: false,
         unreadNum: 0,
         mes: "养盒马，能赚钱",
       }, 
       {
-        icon: '../../images/iconfont-icontuan.png',
-        text: '售后记录',
+        icon: '../../assets/icons/friend.png',
+        text: '邀请好友',
         alreadRead: true,
         unreadNum: 1,
         mes: "得6元，可叠加",
@@ -34,42 +34,42 @@ Page({
 
      second:[
        {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/yinhangka.png',
         text: '银行卡活动',
         alreadRead: false,
         unreadNum: 0,
         mes: "浦发满50减10",
       }, 
       {
-        icon: '../../images/iconfont-kefu.png',
+        icon: '../../assets/icons/dianziquan.png',
         text: '电子券',
         alreadRead: false,
         unreadNum: 0,
         mes: "",
       }, 
       {
-        icon: '../../images/iconfont-help.png',
+        icon: '../../assets/icons/lipinka.png',
         text: '礼品卡',
         alreadRead: false,
         unreadNum: 0,
         mes: "电子卡赠亲友",
       },
       {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/duihuan.png',
         text: '兑换优惠码',
         alreadRead: false,
         unreadNum: 0,
         mes: "",
       }, 
       {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/kefu.png',
         text: '盒马小蜜',
         alreadRead: false,
         unreadNum: 0,
         mes: "客观，吐槽轻点",
       }, 
       {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/pingjia.png',
         text: '评价',
         alreadRead: false,
         unreadNum: 0,
@@ -78,14 +78,14 @@ Page({
     ],
     third: [
       {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/mendian.png',
         text: '盒马门店',
         alreadRead: false,
         unreadNum: 0,
         mes: "",
       }, 
       {
-        icon: '../../images/iconfont-shouhuodizhi.png',
+        icon: '../../assets/icons/shezhi.png',
         text: '设置',
         alreadRead: false,
         unreadNum: 0,

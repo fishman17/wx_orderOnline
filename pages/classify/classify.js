@@ -7,31 +7,31 @@ Page({
   data: {
     classify:[
       {
-        url: "../../assets/images/landscape.png",
-        class: '失灵水果',
+        url: "http://img1.imgtn.bdimg.com/it/u=228757436,1698566375&fm=27&gp=0.jpg",
+        class: '新鲜水果',
         where: 'myFruits',
       },
       {
-        url: "../../assets/images/landscape.png",
+        url: "http://img3.imgtn.bdimg.com/it/u=3977131877,3939061076&fm=200&gp=0.jpg",
         class: '肉类蛋品',
         where: 'myMeat',
       },
       {
-        url:"../../assets/images/landscape.png",
-        class: '失灵水果',
+        url:"http://img0.imgtn.bdimg.com/it/u=2643138296,454739920&fm=27&gp=0.jpg",
+        class: '粮油干货',
       },
 
       {
-        url: "../../assets/images/landscape.png",
-        class: '失灵水果',
+        url: "http://img4.imgtn.bdimg.com/it/u=1467212894,102176156&fm=27&gp=0.jpg",
+        class: '休闲零食',
       },
       {
-        url:"../../assets/images/landscape.png",
-        class: '失灵水果',
+        url:"http://img1.imgtn.bdimg.com/it/u=3747107757,1957790606&fm=27&gp=0.jpg",
+        class: '酒水饮料',
       },
       {
-        url: "../../assets/images/landscape.png",
-        class: '失灵水果',
+        url: "http://img4.imgtn.bdimg.com/it/u=485778917,1868567867&fm=27&gp=0.jpg",
+        class: '厨卫百货',
       },
     ]
   },

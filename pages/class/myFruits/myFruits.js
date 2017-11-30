@@ -15,23 +15,23 @@ Page({
 		foodList: [
 			{
 				id: 0,
-				name: '赣菜'
+				name: '蓝莓草莓'
 			},
 			{
 				id: 1,
-				name: '湘菜'
+				name: '柑橘橙柚'
 			},
 			{
 				id: 2,
-				name: '川菜'
+				name: '热带水果'
 			},
 			{
 				id: 3,
-				name: '酒水'
+				name: '苹果/梨'
 			},
 			{
 				id: 4,
-				name: '汤饮'
+				name: '瓜类'
 			}
 		],
 		classifyList : [],

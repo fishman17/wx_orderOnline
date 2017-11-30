@@ -20,7 +20,7 @@
                     <view class="cart-allin" bindtap="cartAdd" data-id="{{item.id}}">
                         <icon type="{{item.cartSelected ? 'success' : 'circle'}}" color="blue" size="30"></icon>
                     </view>
-                    <image src="{{item.src}}" />
+                    <image src="{{item.url}}" />
                     <view class="mes">
                         <text class="foodName">{{item.name}}</text>
                         <text class="foodIntroduce">{{item.introduce}}</text>

@@ -9,7 +9,7 @@
 .myswiper{
     width: 100%;
     /* height: 20vh; */
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     background-size: cover;
 }
 .slide-image{
@@ -20,7 +20,7 @@
 .headlines{
     width: 100%;
     height: 80rpx;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -30,11 +30,12 @@
 
     width:60rpx;
     height: 60rpx;
+    margin-left: 20rpx;
 }
 .headlines-text{
     width: 700rpx;
     height: 70rpx;
-    background-color: seagreen;
+    /* background-color: seagreen; */
     /* position: relative; */
     /* display: flex;
     flex-direction: column;
@@ -85,18 +86,19 @@
     display: inline-block;
     width:100rpx;
     height: 60rpx;
-    background-color: slateblue;
+    margin-right: 20rpx;
+    /* background-color: slateblue; */
 }
 .components{
     width: 100%;
     height: 15vh;
-    background-color: fuchsia;
+    /* background-color: fuchsia; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-size: cover;
-    margin-top: 30rpx;
+    /* margin-top: 10rpx; */
 }
 .components .functions{
     width: 150rpx;
@@ -112,8 +114,7 @@
     width:100rpx;
     height: 100rpx;
     display: inline-block;
-    border-radius: 50%;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 .components .functions text{
     text-align: center;
@@ -130,6 +131,7 @@
     align-items: center;
     margin-top: 20rpx;
     font-weight: 500;
+    margin-left: 20rpx;
 }
 .todayTrump image{
     width: 60rpx;
@@ -138,7 +140,7 @@
 .content{
     width: 100%;
     height: 30vh;
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -162,26 +164,28 @@
         }
 .someTrumps{
     display: inline-block;
-}
+    }
  .trumps{
     margin-left: 15rpx;
     width: 600rpx;
     height: 250rpx;
-    background-color: silver;
-    border: 2rpx solid firebrick;
+    /* background-color: silver; */
+    margin-top: 10rpx;
+    border: 2rpx solid #EEEEEE;
     display: flex;
     flex-direction: row;
   
 }
  .trumps image{
-    width: 35%;
-    height: 250rpx;
-    background-color: seagreen;
+     margin:20rpx;
+    width: 45%;
+    height: 200rpx;
+    /* background-color: seagreen; */
 }
  .trumps .mes{
     width: 65%;
     height: 250rpx;
-    background-color: rgb(157, 189, 190);
+    /* background-color: rgb(157, 189, 190); */
     position: relative;
 }
  .trumps .mes .foodName{
@@ -192,7 +196,7 @@
 }
  .trumps .mes .foodIntroduce{
     position: absolute;
-    top: 100rpx;
+    top: 50rpx;
     left: 0;
     color: rgb(185, 161, 161);
     font-size: 28rpx;  
@@ -202,7 +206,7 @@
     width: 60rpx;
     height: 30rpx;
     border: 2rpx solid  rgb(255, 60, 0);
-    top: 170rpx;
+    top: 160rpx;
     left: 0;
     color: rgb(255, 60, 0);
     font-size: 25rpx;  
@@ -211,7 +215,7 @@
 }
  .trumps .mes p{
     position: absolute;
-    top: 190rpx;
+    top: 200rpx;
     left: 0;
     color: rgb(255, 94, 0);
     font-size: 30rpx;  
@@ -219,7 +223,7 @@
 .trumps .mes .btn{
     position: absolute;
     right: 20rpx;
-    bottom: 0rpx;
+    bottom: 10rpx;
     width: 200rpx;
 	text-align: right;
 }
@@ -234,24 +238,25 @@
     width: 30%;
     height: 5vh;
     margin: 0 auto;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     text-align: center;
 }
 .newGoods{
     width: 100%;
     display: flex;
-    background-color: sandybrown; 
+    /* background-color: sandybrown;  */
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 .newGoods .goods{
+    margin-top: 5rpx;
     width: 300rpx;
     height: 300rpx;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: block;
-    border: 10rpx solid seagreen; 
+    border-bottom: 2rpx solid #EEEEEE;
     text-align: center;
     position: relative;
 }
