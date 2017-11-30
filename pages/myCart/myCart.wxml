@@ -10,33 +10,55 @@
                     </block>
                 </view>
 </swiper-item> -->
-<view class="container">
-    <view class="content">
-        <block wx:for="{{cart}}">
-            <view class="food">
-                <image src="{{item.src}}" />
-                <view class="mes">
-                    <text class="foodName">{{item.name}}</text>
-                    <text class="foodIntroduce">{{item.introduce}}</text>
-                    <view class="special">特价</view>
-                    <p>￥{{item.price}}</p>
-                    <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}">
-                        <icon type="{{item.selected ? 'success' : 'circle'}}" color="orange" size="30"></icon>
-                    </view>
-                </view>
 
-            </view>
-        </block>
-    </view>
+<view class="container">
+   
+        <view class="content">
+         <scroll-view scroll-y="true" style="height: 90vh;">
+            <block wx:for="{{cart}}" wx:key = "index">
+                <view class="food">
+                    <view class="cart-allin" bindtap="cartAdd" data-id="{{item.id}}">
+                        <icon type="{{item.cartSelected ? 'success' : 'circle'}}" color="blue" size="30"></icon>
+                    </view>
+                    <image src="{{item.src}}" />
+                    <view class="mes">
+                        <text class="foodName">{{item.name}}</text>
+                        <text class="foodIntroduce">{{item.introduce}}</text>
+                        <view class="special">特价</view>
+                        <p>￥{{item.price}}</p>
+                        <view class="number">
+                            <view class="reduce" bindtap="reduceItems" data-id="{{item.id}}">
+                                -
+                            </view>
+                            <view class="num">
+                                {{item.num}}
+                            </view>
+                            <view class="add" bindtap="addItems" data-id="{{item.id}}">
+                                +
+                            </view>
+                        </view>
+                    </view>
+
+
+                </view>
+                <view class="subtotal">
+                    小计:
+                    <text>￥{{item.price*item.num}}</text>
+                </view>
+            </block>
+                </scroll-view>
+        </view>
 
     <view class="cart">
         <view class="cart-allin" bindtap="cartAllIn">
-            <icon type="{{item.selected ? 'success' : 'circle'}}" color="blue" size="30"></icon>
+            <icon type="{{cartAllIn ? 'success' : 'circle'}}" color="blue" size="30"></icon>
 
             <text class="total">全选</text>
         </view>
 
-            <view class="totalall">合计：<text>￥{{cartTotalPrice}}</text></view>
-            <view class="cart-btn">去结算</view>
+        <view class="totalall">合计：
+            <text>￥{{cartTotalPrice}}</text>
+        </view>
+        <view class="cart-btn">去结算</view>
     </view>
 </view>

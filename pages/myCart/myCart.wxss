@@ -4,27 +4,39 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
+    background-color: silver;
 }
 
 .content{
     width: 100%;
     height: 100vh;
-    
-    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.content .subtotal{
+    width: 100%;
+    height: 80rpx;
+    background-color: salmon;
+    text-align: right;
+    border-bottom: 1rpx solid black;
+}
+.content .subtotal text{
+    color: orange;
+    font-size: 40rpx;
+    margin-right: 20rpx;
+}
 .content .food{
     width: 100%;
     height: 200rpx;
     background-color: silver;
-    border: 2rpx solid firebrick;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 20rpx;
+    border-bottom: 1rpx solid black;
 }
 .content .food image{
     width: 35%;
@@ -69,19 +81,39 @@
     color: rgb(255, 94, 0);
     font-size: 30rpx;  
 }
-.content .food .mes .btn{
+.content .food .mes .number{
     position: absolute;
-    right: 20rpx;
-    bottom: 0rpx;
+    right: 10rpx;
+    bottom: 20rpx;
     width: 200rpx;
-	text-align: right;
+    height: 50rpx;
+    border: 2rpx solid silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .food .mes .number .reduce{
+    text-align: center;
+    border-right: 2rpx solid silver;
+    flex: 1;
+}
+.content .food .mes .number .num{
+    flex: 2;
+    text-align: center;
+}
+.content .food .mes .number .add{
+    border-left: 2rpx solid silver;
+    text-align: center;
+    color: blue;
+    flex: 1;
 }
 
 
 
 
 .cart{
-    height: 100rpx;
+    height: 10vh;
     position: fixed;
 	left: 0;
 	right: 0; 

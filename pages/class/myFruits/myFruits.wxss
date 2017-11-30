@@ -108,7 +108,12 @@
 
 
 .cart{
-	display: block;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 	position: fixed;
 	left: 0;
 	right: 0; 

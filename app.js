@@ -49,7 +49,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 1
+            id: 1,
+            num:1,
           },
           {
             name: "旺旺",
@@ -57,7 +58,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 19,
+            id: 19, 
+            num:1,
           },
           {
             name: "徐福记",
@@ -65,7 +67,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 2
+            id: 2,
+            num:1,
           },
           {
             name: "煎饼果子",
@@ -73,8 +76,39 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 18
+            id: 18,
+            num:1,
           },
+          {
+            name: "煎饼果子",
+            price: 33,
+            url: "",
+            introduce: "12341",
+            stock: true,
+            id: 18,
+            num:1,
+          },
+
+          {
+            name: "煎饼果子",
+            price: 33,
+            url: "",
+            introduce: "12341",
+            stock: true,
+            id: 18,
+            num:1,
+          },
+
+          {
+            name: "煎饼果子",
+            price: 33,
+            url: "",
+            introduce: "12341",
+            stock: true,
+            id: 18,
+            num:1,
+          },
+
 
 
         ],
@@ -85,7 +119,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 3
+            id: 3,
+            num:1,
           },
           {
             name: "绿茶",
@@ -93,7 +128,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 4
+            id: 4,
+            num:1,
           }
         ],
         [
@@ -103,7 +139,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 5
+            id: 5,
+            num:1,
           },
           {
             name: "脑白金",
@@ -111,7 +148,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 6
+            id: 6,
+            num:1,
           }
         ],
         [{
@@ -120,7 +158,8 @@ App({
           url: "",
           introduce: "12341",
           stock: true,
-          id: 7
+          id: 7,
+          num:1,
         },
         {
           name: "茅台",
@@ -128,7 +167,8 @@ App({
           url: "",
           introduce: "12341",
           stock: true,
-          id: 8
+          id: 8,
+          num:1,
         }]
       ],
       myMeat: [
@@ -139,7 +179,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 11
+            id: 11,
+            num:1,
           },
           {
             name: "泰国龙眼",
@@ -148,6 +189,7 @@ App({
             introduce: "12341",
             stock: true,
             id: 12,
+            num:1,
           },
           {
             name: "金菠萝",
@@ -155,7 +197,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 13
+            id: 13,
+            num:1,
           },
           {
             name: "木瓜",
@@ -163,7 +206,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 14
+            id: 14,
+            num:1,
           },
 
 
@@ -175,7 +219,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 15
+            id: 15,
+            num:1,
           },
           {
             name: "小麦粉",
@@ -183,7 +228,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 16
+            id: 16,
+            num:1,
           }
         ],
         [
@@ -193,7 +239,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 17
+            id: 17,
+            num:1,
           },
           {
             name: "香菇酱",
@@ -201,7 +248,8 @@ App({
             url: "",
             introduce: "12341",
             stock: true,
-            id: 21
+            id: 21,
+            num:1,
           }
         ],
         [{
@@ -210,7 +258,8 @@ App({
           url: "",
           introduce: "12341",
           stock: true,
-          id: 7
+          id: 7,
+          num:1,
         },
         {
           name: "酱油",
@@ -218,27 +267,161 @@ App({
           url: "",
           introduce: "12341",
           stock: true,
-          id: 8
+          id: 8,
+          num:1,
         }]
+      ],
+      myTrump: [
+        {
+          name: "精选小排",
+          price: 38,
+          url: "",
+          introduce: "12341",
+          stock: true,
+          id: 22,
+          num:1,
+        },
+        {
+          name: "江西赣南脐橙",
+          price: 58,
+          url: "",
+          introduce: "12341",
+          stock: true,
+          id: 23,
+          num:1,
+        },
+        {
+          name: "盒马鲜生大米",
+          price: 44,
+          url: "",
+          introduce: "12341",
+          stock: true,
+          id: 24,
+          num:1,
+        },
+      ],
+      classicGoods: [
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第一个经典菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第二个经典菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第三个经典菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第四个经典菜"
+        },
+  
+      ],
+      newGoods: [
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第一个新品菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第二个新品菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第三个新品菜"
+        },
+        {
+          id: 0,
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          price: 10,
+          introduce: "这是第四个新品菜"
+        },
+  
+      ],
+      components: [
+        {
+          where: "orderSeat",
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          function: "水果专场",
+  
+        },
+        {
+          where: "orderFood",
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          function: "精选好货",
+        },
+        {
+          where: "",
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          function: "新人礼包",
+        },
+        {
+          where: "",
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          function: "邀请好友",
+        },
+        {
+          where: "",
+          image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+          function: "鲜人一步",
+        },
+      ],
+      headLines: [
+        {
+          head: "盒马集市",
+          body: "放慢脚步，来一场旅行",
+          img:"../../assets/images/landscape.png",
+        },
+        {
+          head: "盒马集市",
+          body: "放慢脚步，来一场旅行",
+          img:"../../assets/images/landscape.png",
+        },
+        {
+          head: "盒马集市",
+          body: "放慢脚步，来一场旅行",
+          img:"../../assets/images/landscape.png",
+        },
+    
       ],
     },
     userInfo: {},
-    carts: [{
-      name: "达利园",
-      price: 38,
-      url: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-      introduce: "12341",
-      stock: true,
-      id: 1
-    },
-    {
-      name: "热伤风",
-      price: 23,
-      url:"http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-      introduce: "12341",
-      stock: true,
-      id: 2
-    },],
+    carts: [
+    //   {
+    //   name: "达利园",
+    //   price: 38,
+    //   url: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+    //   introduce: "12341",
+    //   stock: true,
+    //   id: 1,
+    //   num:1,
+    // },
+    // {
+    //   name: "热伤风",
+    //   price: 23,
+    //   url:"http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
+    //   introduce: "12341",
+    //   stock: true,
+    //   id: 2,
+    //   num:1,
+    // },
+  ],
     cartTotal: 0,
     cartTotalPrice: 0,
   },

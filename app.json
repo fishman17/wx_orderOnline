@@ -1,11 +1,14 @@
 {
   "pages": [
-    "pages/myCart/myCart",
+    "pages/index/index",
+    "pages/person/person",
+  
     "pages/common/list",
     "pages/classify/classify",
     "pages/class/myFruits/myFruits",
-    "pages/index/index",
-    "pages/person/person",
+    
+    "pages/myCart/myCart",
+    
     
     "pages/class/myMeat/myMeat"
   ],

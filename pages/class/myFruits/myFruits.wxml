@@ -4,7 +4,7 @@
     <view class="navigation">
             <!-- <scroll-view scroll-y="true" style=
             "height:1000rpx"> -->
-        <block wx:for="{{foodList}}">
+        <block wx:for="{{foodList}}" wx:key = "index">
             
             <text class="navFood {{currentTab==item.id?'active':''}}"
              bindtap="changeNav" data-currentab="{{item.id}}">{{item.name}}</text>
@@ -15,9 +15,8 @@
     <!-- </scroll-view> -->
     
     <view class="content">
-            <scroll-view scroll-y="true" style=
-            "{{windowHeight}}">
-        <block wx:for="{{classifyList[currentTab]}}">
+        <scroll-view scroll-y="true" style="height:80vh">
+        <block wx:for="{{classifyList[currentTab]}}" wx:key = "index">
             <view class="food">
                 <image src="{{item.src}}" />
                 <view class="mes">
@@ -38,7 +37,7 @@
     <view class="cart">
         <text class="total">购物车：{{cartTotal}}件</text>
         <text class="total">总价：￥{{cartTotalPrice}}</text>
-        <button type="default" size="defaultSize" loading="loading" plain="plain}" disabled="disabled" bindtap="defaultTap" hover-class="defaultTap">点击预定</button>
+        <button  bindtap="gotoCart" >进入购物车</button>
         
     
     </view>

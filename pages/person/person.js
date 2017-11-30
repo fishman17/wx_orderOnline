@@ -9,40 +9,91 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    userInfoList: [ 
-      {
+    userInfoList: {
+     first: [{
         icon: '../../image/iconfont-dingdan.png',
-        text: '我的订单',
+        text: '优惠券',
         alreadRead: true,
-        unreadNum: 2
+        unreadNum: 2,
+        mes: "",
       }, 
       {
         icon: '../../image/iconfont-card.png',
-        text: '收货地址',
+        text: '福利社',
         alreadRead: false,
-        unreadNum: 2
+        unreadNum: 0,
+        mes: "养盒马，能赚钱",
       }, 
       {
         icon: '../../images/iconfont-icontuan.png',
         text: '售后记录',
-        alreadRead: false,
-        unreadNum: 1
-      }, 
-      {
-        icon: '../../images/iconfont-shouhuodizhi.png',
-        text: '消息通知',
         alreadRead: true,
-        unreadNum: 1
+        unreadNum: 1,
+        mes: "得6元，可叠加",
+      }, ],
+
+     second:[
+       {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '银行卡活动',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "浦发满50减10",
       }, 
       {
         icon: '../../images/iconfont-kefu.png',
-        text: '联系客服'
+        text: '电子券',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "",
       }, 
       {
         icon: '../../images/iconfont-help.png',
-        text: '关于我们'
-      }]
-    
+        text: '礼品卡',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "电子卡赠亲友",
+      },
+      {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '兑换优惠码',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "",
+      }, 
+      {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '盒马小蜜',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "客观，吐槽轻点",
+      }, 
+      {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '评价',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "",
+      }, 
+    ],
+    third: [
+      {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '盒马门店',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "",
+      }, 
+      {
+        icon: '../../images/iconfont-shouhuodizhi.png',
+        text: '设置',
+        alreadRead: false,
+        unreadNum: 0,
+        mes: "",
+      }, 
+    ]
+    }
+
   },
 
   /**

@@ -92,6 +92,7 @@ Page({
 			cartTotalPrice : app.globalData.cartTotalPrice,
 			classifyList: this.data.classifyList,
 		});
+		app.globalData.classifyList.myMeat=this.data.classifyList;
 		   //将信息加入全局的购物车中
 		console.log(app.globalData.carts);
 	},
@@ -112,9 +113,15 @@ Page({
         cartTotal: app.globalData.cartTotal,
         cartTotalPrice : app.globalData.cartTotalPrice,
         classifyList: app.globalData.classifyList.myMeat,
-      });
+	  });
+	  console.log(this.data.classifyList);
+	  console.log("ss");
 	},
-
+	gotoCart:function(){
+		wx.switchTab({
+			url: `/pages/myCart/myCart`,
+		  })
+	},
 	/**
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
@@ -126,7 +133,12 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function () {
-
+		this.setData({
+			cart : app.globalData.carts,
+			cartTotal: app.globalData.cartTotal,
+			cartTotalPrice : app.globalData.cartTotalPrice,
+			classifyList: app.globalData.classifyList.myMeat,
+		  });
 	},
 
 	/**

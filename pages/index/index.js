@@ -1,4 +1,5 @@
 // pages/index/index.js
+const app = getApp();
 Page({
 
   /**
@@ -13,103 +14,19 @@ Page({
     indicatorDots: true, //是否显示面板指示点
     autoplay: true, //是否自动切换
     interval: 3000, //自动切换时间间隔,3s
+    interval1: 2000,
     duration: 1000, //	滑动动画时长1s
     //功能模块
     //大嘴头条图标
     headlinesImg: "../../assets/images/landscape.png",
     //大嘴头条内容
-    headLines: [
-      {
-        head: "盒马集市",
-        body: "放慢脚步，来一场旅行",
-        img:"../../assets/images/landscape.png",
-      },
-     
-    ],
-    components: [
-      {
-        where: "orderSeat",
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "水果专场",
-
-      },
-      {
-        where: "orderFood",
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "精选好货",
-      },
-      {
-        where: "",
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "新人礼包",
-      },
-      {
-        where: "",
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "邀请好友",
-      },
-      {
-        where: "",
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        function: "鲜人一步",
-      },
-    ],
+    headLines: [],
+    components: [],
     //新品菜
-    newGoods: [
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第一个新品菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第二个新品菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第三个新品菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第四个新品菜"
-      },
-
-    ],
+    newGoods: [],
     //经典菜
-    classicGoods: [
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第一个经典菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第二个经典菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第三个经典菜"
-      },
-      {
-        id: 0,
-        image: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-        price: 10,
-        introduce: "这是第四个经典菜"
-      },
-
-    ],
+    classicGoods: [],
+    classifyList: [],
   },
 
   changeTo: (event) => {
@@ -131,9 +48,54 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      classifyList: app.globalData.classifyList.myTrump,
+      newGoods: app.globalData.classifyList.newGoods,
+      classicGoods: app.globalData.classifyList.classicGoods,
+      components: app.globalData.classifyList.components,
+      headLines: app.globalData.classifyList.headLines,
+  });
+  console.log(111);
+  console.log(this.data.classifyList);
   },
-
+  ordinInCart: function(e){
+    console.log(e);
+    let id = e.currentTarget.dataset.id;
+    let classifyList = this.data.classifyList;
+    let carts = app.globalData.carts;
+    for(let item of classifyList)
+    {
+      if (item.id == id  && item.stock) {
+        if (!item.selected) {
+          console.log("addsuccess");
+          carts.push(item);
+          app.globalData.cartTotal++;
+          app.globalData.cartTotalPrice += item.price;
+          item.selected = true;
+        }else if(item.selected){
+          app.globalData.carts = carts.filter((cartItem)=>{   //filter返回新数组，所以不能用carts接受，
+                                    //不然app.globalData.carts不能改变
+             return cartItem.id !=id;
+           }); 
+          console.log("deletesuccess");
+          app.globalData.cartTotal--;
+          app.globalData.cartTotalPrice -= item.price;
+          item.selected = false;
+        }
+      }
+    }
+    console.log( this.data.classifyList);
+    this.setData({
+			cart : app.globalData.carts,
+			cartTotal: app.globalData.cartTotal,
+			cartTotalPrice : app.globalData.cartTotalPrice,
+			classifyList: this.data.classifyList,
+		});
+		app.globalData.classifyList.myTrump=this.data.classifyList;
+       //将信息加入全局的购物车中
+       console.log(this.data.classifyList);
+		console.log(app.globalData.carts);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -145,7 +107,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.setData({
+      classifyList: app.globalData.classifyList.myTrump,
+      newGoods: app.globalData.classifyList.newGoods,
+      classicGoods: app.globalData.classifyList.classicGoods,
+      components: app.globalData.classifyList.components,
+      headLines: app.globalData.classifyList.headLines,
 
+  });
   },
 
   /**

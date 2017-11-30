@@ -57,6 +57,12 @@ Page({
 		} else {		
 		}
 	},
+
+	gotoCart:function(){
+		wx.switchTab({
+			url: `/pages/myCart/myCart`,
+		  })
+	},
 	//改变按钮，购物车操作
 	changes: function (id) {
 		var carts = app.globalData.carts;
@@ -91,6 +97,7 @@ Page({
 		}
 		// app.globalData.cartTotal += this.data.cartTotal;
 		// app.globalData.cartTotalPrice += this.data.cartTotalPrice;
+		app.globalData.classifyList.myFruits=this.data.classifyList;
 		console.log(app.globalData.carts);
 		this.setData({
 			cart : app.globalData.carts,
@@ -121,7 +128,7 @@ Page({
 			classifyList: app.globalData.classifyList.myFruits,
 		  });
 	},
-
+	
 	/**
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
@@ -133,7 +140,12 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function () {
-
+		this.setData({
+			cart : app.globalData.carts,
+			cartTotal: app.globalData.cartTotal,
+			cartTotalPrice : app.globalData.cartTotalPrice,
+			classifyList: app.globalData.classifyList.myFruits,
+		  });
 	},
 
 	/**

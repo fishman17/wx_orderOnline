@@ -1,4 +1,4 @@
-@import 'styles/weui.wxss';
+@import './styles/weui.wxss';
 
 /* 将样式模块化 */
 @import 'styles/reset.wxss';
