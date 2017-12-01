@@ -37,7 +37,7 @@
     </scroll-view>
     </view>
  
-    
+
     <view class="cart">
         <text class="total">购物车：{{cartTotal}}件</text>
         <text class="total">总价：￥{{cartTotalPrice}}</text>
