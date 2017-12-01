@@ -1,17 +1,21 @@
 ### 项目初览
-> 初学小程序，仿造盒马鲜生，花了几天时间实现了部分功能。<br>
+> 仿造盒马鲜生，实现了部分功能。<br>
 
 盒马鲜生是阿里巴巴对线下超市完全重构的新零售业态，热度十分
 
-![](https://user-gold-cdn.xitu.io/2017/12/1/1600fe40eb1fd0e4?w=260&h=464&f=png&s=111273)
+
+![](https://user-gold-cdn.xitu.io/2017/12/1/1601101dde0a0185?w=343&h=631&f=gif&s=2404841)
 
 ![](https://user-gold-cdn.xitu.io/2017/12/1/1600fe4fd66b3587?w=237&h=420&f=png&s=117741)
 
 
-![](https://user-gold-cdn.xitu.io/2017/12/1/1600ffc16ab0f369?w=235&h=419&f=png&s=57639)
+
+![](https://user-gold-cdn.xitu.io/2017/12/1/16011022ca8663da?w=343&h=631&f=gif&s=589002)
 
 
-![](https://user-gold-cdn.xitu.io/2017/12/1/16010009bc1c023e?w=260&h=463&f=png&s=65693)
+
+
+![](https://user-gold-cdn.xitu.io/2017/12/1/16011026998ea9e9?w=365&h=640&f=gif&s=1556064)
 ![](https://user-gold-cdn.xitu.io/2017/12/1/16010029fe869d94?w=263&h=460&f=png&s=37249)
 
 #### 项目功能
@@ -140,7 +144,7 @@ reduceItems: function (e) {
   },
 ```
 ### 4.weui框架引入
-在全局CSS样式中 添加的CSS适配于所有的页面，由此可以引入weui ,做一些界面真的很方便
+**在全局CSS样式中 添加的CSS适配于所有的页面，由此可以引入weui ,做一些界面真的很方便**
 ```
 @import './styles/weui.wxss';
 ```
@@ -150,12 +154,12 @@ reduceItems: function (e) {
 2. 善于利用有效资源， 比如iconfont  esay-moc weui等
 3. 切页面要细心，善于利用弹性布局等布局方法，小程序的rpx确实很好用
 4. 不要一股脑的写代码， 当函数具有复用性，应该抽象出来，封装好，这样代码才易于维护，易读
-5. 
 
 ### 项目地址:
-https://github.com/fishman17/wx_orderOnline
+https://github.com/fishman17/wx_orderOnline   内含详细注释
 
 ### 个人简介
-本人江西财经大学大三学生，努力学习JS中，热爱前端
 github : https://github.com/fishman17
-邮箱 : 734583898@qq.com 
+邮箱 : 734583898@qq.com  
+
+**最后 如果您喜欢这个项目的话，给个star哦 谢谢！**
