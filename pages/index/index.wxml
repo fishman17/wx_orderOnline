@@ -1,5 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="container">
+    <!-- 首页导航 -->
     <view class="myswiper">
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}" wx:key="index">
@@ -9,7 +10,7 @@
             </block>
         </swiper>
     </view>
-
+    <!-- 分类导航信息 -->
     <view class="components">
         <block wx:for="{{components}}" wx:key="index">
             <view class="functions" bindtap="changeTo" data-where="{{item.where}}">
@@ -21,7 +22,7 @@
         </block>
     </view>
   
-
+    <!-- scroll-view嵌套swiper实现上下栏轮播 -->
         <scroll-view scroll-y-="true"  >
             <view class="headlines">
             <image src="{{headlinesImg}}" class="headlines-img" />
@@ -56,6 +57,7 @@
     </view>
     <!-- // <view class="content"> -->
 
+    <!-- 王牌产品列表 -->
     <view class="myTrump">
         <scroll-view scroll-x-="true"  class="content">
             <block wx:for="{{classifyList}}" wx:key="index">
@@ -82,6 +84,7 @@
     <view class="GoodsLabel">
         新品上架
     </view>
+    <!-- 新产品列表 -->
     <view class="newGoods">
         <block wx:for="{{newGoods}}" wx:key="index">
             <navigator class="goods" url= "../class/myFruits/myFruits">
@@ -96,6 +99,7 @@
     <view class="GoodsLabel">
         经典系列
     </view>
+    <!-- 经典产品列表 -->
     <view class="newGoods">
         <block wx:for="{{classicGoods}}" wx:key="index">
             <navigator class="goods"  url= "../class/myMeat/myMeat">

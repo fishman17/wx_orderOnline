@@ -12,7 +12,7 @@
 </swiper-item> -->
 
 <view class="container">
-   
+   <!-- 商品信息 -->
         <view class="content">
          <scroll-view scroll-y="true" style="height: 90vh;">
             <block wx:for="{{cart}}" wx:key = "index">
@@ -46,7 +46,7 @@
             </block>
                 </scroll-view>
         </view>
-
+        <!-- 购物车信息 -->
     <view class="cart">
         <view class="cart-allin" bindtap="cartAllIn">
             <icon type="{{cartAllIn ? 'success' : 'circle'}}" color="blue" size="30"></icon>

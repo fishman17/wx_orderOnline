@@ -32,13 +32,13 @@ App({
       }
     })
 
-    wx.request({
-      url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
-      complete: res => {
-        console.log(res);
-        this.globalData.classifyList = res.data;
-      },
-    })
+    // wx.request({
+    //   url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
+    //   complete: res => {
+    //     console.log(res);
+    //     this.globalData.classifyList = res.data;
+    //   },
+    // })
   },
   onShow(options) {
   },
@@ -48,33 +48,12 @@ App({
   },
 
   globalData: {
-    classifyList: {
-      
-    },
-    userInfo: {},
-    carts: [
-    //   {
-    //   name: "达利园",
-    //   price: 38,
-    //   url: "http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-    //   introduce: "12341",
-    //   stock: true,
-    //   id: 1,
-    //   num:1,
-    // },
-    // {
-    //   name: "热伤风",
-    //   price: 23,
-    //   url:"http://img.lanrentuku.com/img/allimg/1707/15006265929403.jpg",
-    //   introduce: "12341",
-    //   stock: true,
-    //   id: 2,
-    //   num:1,
-    // },
-  ],
-    cartTotal: 0,
-    cartTotalPrice: 0,
-    cartAllIn: false,
+    classifyList: {},  //商品列表
+    userInfo: {},     //用户信息
+    carts: [],       //购物车信息
+    cartTotal: 0,     //购物车数量
+    cartTotalPrice: 0,  //购物车价值
+    cartAllIn: false,   //购物车是否全选
   },
 
 })

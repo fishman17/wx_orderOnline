@@ -1,10 +1,12 @@
 <!--pages/peoson/person.wxml-->
 
 <view class="container">
+<!-- 个人信息 -->
     <view class="userinfo">
         <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" />
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </view>
+    <!-- 杂项 -->
     <view class="foodState">
         <view class="states">
             <image src="../../assets/icons/waitpay.png" />
@@ -27,6 +29,7 @@
             <text>全部订单</text>
         </view>
     </view>
+    <!-- 功能列表 -->
     <view class="info_list">
         <view class="weui-cells">
             <block wx:for="{{userInfoList.first}}" wx:key = "index">

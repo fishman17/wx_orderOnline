@@ -8,12 +8,12 @@
 }
 .myswiper{
     width: 100%;
-    height: 320rpx; 
+    height: 290rpx; 
     background-size: cover;
 }
 .slide-image{
     width: 100%;
-    height: 320rpx; 
+    height: 290rpx; 
     margin:  0 auto;
 }
 .headlines{

@@ -48,6 +48,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // 加载的时候从easymoc获取全局数据
     wx.request({
       url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
       complete: res => {
@@ -68,6 +69,7 @@ Page({
   console.log(111);
   console.log(this.data.classifyList);
   },
+  // 添加购物车操作
   ordinInCart: function(e){
     
     console.log(e);

@@ -7,11 +7,9 @@ Page({
    */
   data: {
     cart: [],
-    // cartTotal: 0,
-    // cartTotalPrice: 0,
     cartAllIn: false,
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */
@@ -25,6 +23,7 @@ Page({
     console.log(this.data.cart)
     console.log(app.globalData.carts)
   },
+  // 点击减号
   reduceItems: function (e) {
     let carts = app.globalData.carts;
     let classifyList = app.globalData.classifyList;
@@ -88,6 +87,7 @@ Page({
     })
 
   },
+  // 点击加号
   addItems: function (e) {
     let carts = app.globalData.carts;
     for (let key of carts) {
@@ -115,7 +115,7 @@ Page({
       cartTotalPrice: totalPrice,
     })
   },
-
+  // 购物车添加事件
   cartAdd: function (e) {
     console.log(e);
     let carts = this.data.cart;
@@ -147,6 +147,8 @@ Page({
     });
     app.globalData.carts = carts;
   },
+
+  // 购物车全选操作
   cartAllIn: function () {
 
     for (let key of this.data.cart) {
@@ -181,6 +183,8 @@ Page({
     });
     app.globalData.carts = this.data.cart;
   },
+  
+  // 点击购物车操作
   finishedOrder: function () {
     wx.showToast({
       title: "您好像没钱",

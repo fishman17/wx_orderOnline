@@ -1,6 +1,8 @@
 <!--pages/orderFood/orderFood.wxml-->
-<view class="container">
+<view class="container">   
     <!-- <scroll-view scroll-y="true"> -->
+
+      <!-- 导航栏 -->
     <view class="navigation">
             <!-- <scroll-view scroll-y="true" style=
             "height:1000rpx"> -->
@@ -17,6 +19,7 @@
     </view>
     <!-- </scroll-view> -->
     
+    <!-- 商品列表 -->
     <view class="content">
         <scroll-view scroll-y="true" style="height:82vh">
         <block wx:for="{{classifyList[currentTab]}}" wx:key = "index">
@@ -36,7 +39,7 @@
         </block>
     </scroll-view>
     </view>
-    
+    <!-- 底部购物车 -->
     <view class="cart">
         <text class="total">购物车：{{cartTotal}}件</text>
         <text class="total">总价：￥{{cartTotalPrice}}</text>

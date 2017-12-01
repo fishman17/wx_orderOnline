@@ -7,12 +7,12 @@ Page({
 	 */
 	data: {
 		//scrollview 高度
-		windowHeight: 0,
-		currentTab: 0,
-		cart: [],
-		cartTotal: 0,
-		cartTotalPrice: 0,
-		foodList: [
+		windowHeight: 0,    //高度
+		currentTab: 0,	 	//导航栏指向
+		cart: [],			//购物车
+		cartTotal: 0,		//购物车件数
+		cartTotalPrice: 0,   //购物车价格总计
+		foodList: [            // 分类
 			{
 				id: 0,
 				name: '蓝莓草莓'
@@ -34,7 +34,7 @@ Page({
 				name: '瓜类'
 			}
 		],
-		classifyList : [],
+		classifyList : [],   //所有商品信息
 	},
 
 	/**
@@ -57,7 +57,7 @@ Page({
 		} else {		
 		}
 	},
-
+	//前往购物车
 	gotoCart:function(){
 		wx.switchTab({
 			url: `/pages/myCart/myCart`,
@@ -95,8 +95,7 @@ Page({
 				}
 			});
 		}
-		// app.globalData.cartTotal += this.data.cartTotal;
-		// app.globalData.cartTotalPrice += this.data.cartTotalPrice;
+	
 		app.globalData.classifyList.myFruits=this.data.classifyList;
 		console.log(app.globalData.carts);
 		this.setData({
@@ -111,20 +110,8 @@ Page({
 
 	onLoad: function (options) {
 
-		wx.request({
-			url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
-			complete: res => {
-			  console.log(res);
-			  app.globalData.classifyList = res.data;
-			  this.setData({
-				cart : app.globalData.carts,
-				cartTotal: app.globalData.cartTotal,
-				cartTotalPrice : app.globalData.cartTotalPrice,
-				classifyList: app.globalData.classifyList.myFruits,
-			  });
-			},
-		  });
 
+		  
 		console.log(options);
 		wx.getSystemInfo({
 			success: (res) => {
@@ -136,7 +123,13 @@ Page({
 			}
 		  })
 		  console.log(app.globalData);
-		
+		  this.setData({
+			cart : app.globalData.carts,
+			cartTotal: app.globalData.cartTotal,
+			cartTotalPrice : app.globalData.cartTotalPrice,
+			classifyList: app.globalData.classifyList.myFruits,
+		  });
+		  
 	},
 	
 	/**
@@ -150,6 +143,7 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function () {
+		// 展示的时候刷新全局信息
 		this.setData({
 			cart : app.globalData.carts,
 			cartTotal: app.globalData.cartTotal,

@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    //分类信息存储
     classify:[
       {
         url: "http://img1.imgtn.bdimg.com/it/u=228757436,1698566375&fm=27&gp=0.jpg",

@@ -9,7 +9,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    userInfoList: {
+    userInfoList: {     //商品信息
      first: [{
         icon: '../../assets/icons/coupon.png',
         text: '优惠券',
