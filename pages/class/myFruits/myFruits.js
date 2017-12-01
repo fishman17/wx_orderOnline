@@ -110,6 +110,21 @@ Page({
 	},
 
 	onLoad: function (options) {
+
+		wx.request({
+			url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
+			complete: res => {
+			  console.log(res);
+			  app.globalData.classifyList = res.data;
+			  this.setData({
+				cart : app.globalData.carts,
+				cartTotal: app.globalData.cartTotal,
+				cartTotalPrice : app.globalData.cartTotalPrice,
+				classifyList: app.globalData.classifyList.myFruits,
+			  });
+			},
+		  });
+
 		console.log(options);
 		wx.getSystemInfo({
 			success: (res) => {
@@ -121,12 +136,7 @@ Page({
 			}
 		  })
 		  console.log(app.globalData);
-		  this.setData({
-			cart : app.globalData.carts,
-			cartTotal: app.globalData.cartTotal,
-			cartTotalPrice : app.globalData.cartTotalPrice,
-			classifyList: app.globalData.classifyList.myFruits,
-		  });
+		
 	},
 	
 	/**

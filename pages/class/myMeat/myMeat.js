@@ -98,6 +98,21 @@ Page({
 	},
 
 	onLoad: function (options) {
+		wx.request({
+			url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
+			complete: res => {
+			  console.log(res);
+			  app.globalData.classifyList = res.data;
+			  this.setData({
+				cart : app.globalData.carts,
+				cartTotal: app.globalData.cartTotal,
+				cartTotalPrice : app.globalData.cartTotalPrice,
+				classifyList: app.globalData.classifyList.myMeat,
+			  });
+			},
+		  });
+
+		  
 		console.log(options);
 		wx.getSystemInfo({
 			success: (res) => {
@@ -108,12 +123,7 @@ Page({
 			  console.log(`屏幕高度：${res.windowHeight}`);
 			}
       })
-      this.setData({
-        cart : app.globalData.carts,
-        cartTotal: app.globalData.cartTotal,
-        cartTotalPrice : app.globalData.cartTotalPrice,
-        classifyList: app.globalData.classifyList.myMeat,
-	  });
+     
 	  console.log(this.data.classifyList);
 	  console.log("ss");
 	},

@@ -38,8 +38,6 @@
                             </view>
                         </view>
                     </view>
-
-
                 </view>
                 <view class="subtotal">
                     小计:
@@ -59,6 +57,6 @@
         <view class="totalall">合计：
             <text>￥{{cartTotalPrice}}</text>
         </view>
-        <view class="cart-btn">去结算</view>
+        <view class="cart-btn" bindtap="finishedOrder">去结算</view>
     </view>
 </view>

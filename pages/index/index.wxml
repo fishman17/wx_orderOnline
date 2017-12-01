@@ -4,7 +4,7 @@
         <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{imgUrls}}" wx:key="index">
                 <swiper-item>
-                    <image src="{{item}}" class="slide-image" height="100rpx" />
+                    <image src="{{item}}" class="slide-image"  />
                 </swiper-item>
             </block>
         </swiper>
@@ -28,7 +28,7 @@
             <view class="headlines-text">
                 <swiper autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" vertical="true">
                     <block wx:for="{{headLines}}" wx:key="index">
-                        <swiper-item class="abc">
+                        <swiper-item class="headLines-items">
                             <view class="headlines-text-items">
 
                                 <view class="headlines-text-hd">
@@ -49,6 +49,10 @@
     <view class="todayTrump">
         <image src="../../assets/icons/wangpai.png"/>
         <text>今日王牌大赏</text>
+        <navigator class="todayTrump-right" url= "../class/myFruits/myFruits">
+            <text>更多</text>
+            <image src="../../assets/icons/right.png"/>
+        </navigator>
     </view>
     <!-- // <view class="content"> -->
 
@@ -64,7 +68,7 @@
                             <view class="special">特价</view>
                             <p>￥{{item.price}}</p>
                             <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}">
-                                <icon type="{{item.selected ? 'success' : 'circle'}}" color="orange" size="30"></icon>
+                                <icon type="{{item.selected ? 'success' : 'circle'}}" color="#23a3ff" size="30"></icon>
                             </view>
                         </view>
                     </view>
@@ -80,13 +84,13 @@
     </view>
     <view class="newGoods">
         <block wx:for="{{newGoods}}" wx:key="index">
-            <view class="goods">
+            <navigator class="goods" url= "../class/myFruits/myFruits">
                 <view class="goodsImage">
                     <image src="{{item.image}}" />
                 </view>
                 <text class="goods-price">￥{{item.price}}</text>
                 <text class="goods-introduce">{{item.introduce}}</text>
-            </view>
+            </navigator>
         </block>
     </view>
     <view class="GoodsLabel">
@@ -94,13 +98,13 @@
     </view>
     <view class="newGoods">
         <block wx:for="{{classicGoods}}" wx:key="index">
-            <view class="goods">
+            <navigator class="goods"  url= "../class/myMeat/myMeat">
                 <view class="goodsImage">
                     <image src="{{item.image}}" />
                 </view>
                 <text class="goods-price">￥{{item.price}}</text>
                 <text class="goods-introduce">{{item.introduce}}</text>
-            </view>
+            </navigator>
         </block>
     </view>
 </view>

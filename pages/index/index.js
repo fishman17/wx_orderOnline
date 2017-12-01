@@ -48,17 +48,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      classifyList: app.globalData.classifyList.myTrump,
-      newGoods: app.globalData.classifyList.newGoods,
-      classicGoods: app.globalData.classifyList.classicGoods,
-      components: app.globalData.classifyList.components,
-      headLines: app.globalData.classifyList.headLines,
-  });
+    wx.request({
+      url: 'http://www.easy-mock.com/mock/5a1ffb42583969285ab22bb7/orderOnline/orderOnline',
+      complete: res => {
+        console.log(res);
+        app.globalData.classifyList = res.data;
+        console.log(app.globalData.classifyList);
+        this.setData({
+          classifyList: app.globalData.classifyList.myTrump,
+          newGoods: app.globalData.classifyList.newGoods,
+          classicGoods: app.globalData.classifyList.classicGoods,
+          components: app.globalData.classifyList.components,
+          headLines: app.globalData.classifyList.headLines,
+      });
+      },
+    });
+
+    
   console.log(111);
   console.log(this.data.classifyList);
   },
   ordinInCart: function(e){
+    
     console.log(e);
     let id = e.currentTarget.dataset.id;
     let classifyList = this.data.classifyList;
@@ -72,6 +83,11 @@ Page({
           app.globalData.cartTotal++;
           app.globalData.cartTotalPrice += item.price;
           item.selected = true;
+          wx.showToast({
+            title: '已添加到购物车',
+            icon: "success",
+            duration: 750,
+          });
         }else if(item.selected){
           app.globalData.carts = carts.filter((cartItem)=>{   //filter返回新数组，所以不能用carts接受，
                                     //不然app.globalData.carts不能改变
@@ -83,6 +99,7 @@ Page({
           item.selected = false;
         }
       }
+      
     }
     console.log( this.data.classifyList);
     this.setData({

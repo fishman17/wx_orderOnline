@@ -18,7 +18,7 @@
     <!-- </scroll-view> -->
     
     <view class="content">
-        <scroll-view scroll-y="true" style="height:80vh">
+        <scroll-view scroll-y="true" style="height:82vh">
         <block wx:for="{{classifyList[currentTab]}}" wx:key = "index">
             <view class="food">
                 <image src="{{item.url}}" />
@@ -28,7 +28,7 @@
                     <view class="special">特价</view>
                     <p>￥{{item.price}}</p>
                     <view class="btn" bindtap="ordinInCart" data-id="{{item.id}}" data-stock="{{item.stock}}" >
-                            <icon type="{{item.selected ? 'success' : 'circle'}}" color="blue" size="30"></icon>
+                            <icon type="{{item.selected ? 'success' : 'circle'}}" color="#23a3ff" size="30"></icon>
                     </view>
                 </view>
                 
@@ -36,7 +36,7 @@
         </block>
     </scroll-view>
     </view>
-
+    
     <view class="cart">
         <text class="total">购物车：{{cartTotal}}件</text>
         <text class="total">总价：￥{{cartTotalPrice}}</text>

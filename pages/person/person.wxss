@@ -1,6 +1,6 @@
 /* pages/peoson/person.wxss */
 .container{
-  background-color: silver;
+  background-color: #f7f7f7;
 }
 .userinfo{
     width: 100%;
@@ -22,7 +22,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1rpx solid black;
+    border-bottom: 1rpx solid #f7f7f7;
     background-color: white;
   }
 
@@ -71,6 +71,7 @@
   .weui-cell__hd image{
     width: 60rpx;
     height: 60rpx;
+    margin-right: 15rpx;
     vertical-align: -2px;
   }
   .weui_cell_bd{

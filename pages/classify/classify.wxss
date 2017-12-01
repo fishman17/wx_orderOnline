@@ -1,7 +1,7 @@
 /* pages/classify/classify.wxss */
 .classify-hd__img{
     width: 100%;
-    height: 30vh;
+    height: 35vh;
 }
 .classify-bd{
     width: 100%;

@@ -127,8 +127,12 @@
 	right: 0; 
 	bottom: 0;
 	padding: 50rpx;
-    background: #f7f7f7;
+    background: #e7e7e7;
 }
 .cart .total{
     margin-right: 25rpx;
 }
+.cart button{
+    margin-right: 60rpx;
+}
+

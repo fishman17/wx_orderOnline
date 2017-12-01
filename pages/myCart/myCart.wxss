@@ -19,9 +19,8 @@
 .content .subtotal{
     width: 100%;
     height: 80rpx;
-    /* background-color: salmon; */
     text-align: right;
-    border-bottom: 1rpx solid #e7e7e7;
+    border-bottom: 1rpx solid #cecece;
 }
 .content .subtotal text{
     color: orange;
@@ -39,15 +38,14 @@
     border-bottom: 1rpx solid #f7f7f7;
 }
 .content .food image{
-    width: 35%;
-    height: 200rpx;
+    width: 30%;
+    height: 180rpx;
+    margin: 20rpx;
   
-    /* background-color: seagreen; */
 }
 .content .food .mes{
     width: 65%;
     height: 200rpx;
-    /* background-color: rgb(157, 189, 190); */
     position: relative;
 }
 .content .food .mes .foodName{
@@ -93,8 +91,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 35rpx;
 }
 .content .food .mes .number .reduce{
+    font-size: 35rpx;
+    font-weight: 700;
     text-align: center;
     border-right: 2rpx solid silver;
     flex: 1;
@@ -104,6 +105,8 @@
     text-align: center;
 }
 .content .food .mes .number .add{
+    font-size: 35rpx;
+    font-weight: 700;
     border-left: 2rpx solid silver;
     text-align: center;
     color: blue;
@@ -119,7 +122,6 @@
 	left: 0;
 	right: 0; 
 	bottom: 0;
-	/* padding: 50rpx; */
     background: white;
     display: flex;
     flex-direction: row;
@@ -138,10 +140,10 @@
 .cart .cart-btn{
     margin-right: 0;
     width: 200rpx;
-    height: 100rpx;
+    height: 100%;
     font-size: 35rpx;
     text-align: center;
     line-height: 100rpx;
     color: white;
-    background-color: seagreen;
+    background-color: #23a3ff;
 }
